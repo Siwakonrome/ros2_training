@@ -11,8 +11,6 @@ dict_covar = [{"state covar": np.ndarray.tolist(Q) , "senser covar": float(R[0])
 with open(r'test.yaml','w') as file:
     yaml.dump(dict_covar, file)
 
-
-
 with open(r'read.yaml') as file:
     covar = yaml.load(file, Loader = yaml.FullLoader)
 
